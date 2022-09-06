@@ -1,3 +1,7 @@
+--PROGRAMA POR ACREDITADO
+--Este código retorna el número de control de cada acreditado con su respectivo programa
+SELECT cc.nocontrolcli, p.nombre FROM  CreditosClientes as cc
+LEFT JOIN PROGRAMA as P ON P.idprograma = cc.IDPrograma 
 
 --SQL de Datos Generales
 --Ordenados por NoControl, Domicilio, Teléfono, Colonia, Municipio, Giro, CP, Actividad Clave, Observación, Actividad, TipoNegocio, Fecha de Inicio de Operación,
